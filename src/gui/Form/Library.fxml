@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnl_Library" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1300.0" style="-fx-background-color: linear-gradient( to top,black,#3D424D);" styleClass="pnl_view" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LibraryController">
+   <children>
+      <Pane fx:id="pnl_Title" prefHeight="50.0" prefWidth="1300.0">
+         <children>
+            <Label layoutX="20.0" layoutY="10.0" text="Library" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_Search" focusTraversable="false" layoutX="1001.0" layoutY="7.0" prefHeight="35.0" prefWidth="285.0" promptText="Sreach...." style="-fx-background-color: #ffffff11; -fx-background-radius: 10px;" styleClass="text_input">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="pnl_ScrollList" layoutY="54.0" prefHeight="770.0" prefWidth="1300.0" style="-fx-background-color: black;" styleClass="main_background3" stylesheets="@../../css/main.css">
+         <content>
+            <Pane id="tex" fx:id="pnl_List" prefHeight="770.0" prefWidth="1285.0" style="-fx-background-color: linear-gradient( to top,black,#3D424D);;" styleClass="main_background3" stylesheets="@../../css/main.css">
+               <children>
+                  <TilePane fx:id="tile_List" hgap="18.0" layoutX="10.0" layoutY="20.0" prefHeight="730.0" prefWidth="1260.0" vgap="20.0" />
+               </children>
+            </Pane>
+         </content>
+      </ScrollPane>
+      <Separator layoutY="50.0" prefHeight="5.0" prefWidth="1300.0" />
+   </children>
+</Pane>

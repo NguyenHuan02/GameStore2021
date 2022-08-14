@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnl_Row_Wishlist" prefHeight="100.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Row_WishlistController">
+   <children>
+      <Pane fx:id="pane2" layoutX="1170.0" prefHeight="100.0" prefWidth="80.0" styleClass="row_product2" stylesheets="@../../css/main.css">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="28.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/trash50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_Row" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="1250.0" styleClass="row_product" stylesheets="@../../css/main.css">
+         <children>
+            <Pane fx:id="pane3" layoutX="1240.0" prefHeight="100.0" prefWidth="10.0" styleClass="row_product3" />
+            <ImageView fx:id="img_AppIcon" fitHeight="80.0" fitWidth="80.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/Untitled-1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbl_Name" alignment="TOP_LEFT" layoutX="120.0" layoutY="20.0" prefHeight="30.0" prefWidth="194.0" text="Minecraft" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Developer" layoutX="120.0" layoutY="50.0" prefHeight="25.0" prefWidth="181.0" text="Mojang" textFill="#b9b8b8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Type" alignment="CENTER" layoutX="330.0" layoutY="35.0" prefHeight="30.0" prefWidth="130.0" text="Game" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_ReleaseDate" alignment="TOP_LEFT" layoutX="500.0" layoutY="35.0" prefHeight="30.0" prefWidth="120.0" text="01/01/2021" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Price" alignment="CENTER_RIGHT" layoutX="1120.0" layoutY="35.0" prefHeight="30.0" prefWidth="100.0" text="100$" textFill="#f38064">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_OriginPrice" alignment="CENTER_RIGHT" layoutX="900.0" layoutY="35.0" prefHeight="30.0" prefWidth="100.0" text="100$" textFill="#b2c9f9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Sale" alignment="CENTER_RIGHT" layoutX="1000.0" layoutY="35.0" prefHeight="30.0" prefWidth="100.0" text="0%" textFill="#b2c9f9">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <HBox fx:id="Hbox_Star_View" layoutX="700.0" layoutY="40.0" prefHeight="20.0" prefWidth="130.0" spacing="2.0">
+               <children>
+                  <ImageView fx:id="img_1star" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/starWhiteFill50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_2star" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/starWhiteFill50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_3star" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/starWhiteFill50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_4star" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/starWhiteRegular50.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img_5star" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/starWhiteRegular50.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbl_Views" alignment="CENTER" text="..." textFill="#b9b8b8">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btn_Delete" layoutX="1220.0" layoutY="-10.0" opacity="0.0" prefHeight="10.0" prefWidth="10.0" style="-fx-background-radius: 25px;" styleClass="button_type7">
+               <graphic>
+                  <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/multiply24.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

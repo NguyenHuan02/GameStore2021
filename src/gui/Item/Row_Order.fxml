@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnl_Row_Order" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="840.0" styleClass="user_info" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Row_OrderController">
+   <children>
+      <HBox layoutX="15.0" layoutY="12.0" prefHeight="26.0" spacing="40.0">
+         <children>
+            <Label fx:id="lbl_ID" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="17.0" prefWidth="70.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_CreationDate" alignment="CENTER" layoutX="15.0" layoutY="17.0" prefWidth="100.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_NameCustomer" alignment="CENTER" layoutX="545.0" layoutY="17.0" prefWidth="200.0" text="Please wait a second.." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Quantity" alignment="CENTER" layoutX="335.0" layoutY="17.0" prefWidth="60.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Total" prefWidth="80.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblStatus" alignment="CENTER" prefWidth="100.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>

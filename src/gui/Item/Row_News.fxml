@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnl_Row" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="405.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Row_NewsController">
+   <children>
+      <Pane fx:id="pnl_MenuHide" layoutX="335.0" prefHeight="180.0" prefWidth="60.0" styleClass="row_news2" stylesheets="@../../css/main.css">
+         <children>
+            <JFXButton fx:id="btn_View" focusTraversable="false" layoutX="5.0" layoutY="70.0" prefHeight="42.0" prefWidth="51.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/eye50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_RowContent" layoutX="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="380.0" styleClass="row_news" stylesheets="@../../css/main.css">
+         <children>
+            <Pane fx:id="pnl_MenuShow" layoutX="370.0" prefHeight="180.0" prefWidth="10.0" styleClass="row_news2" />
+            <ImageView fx:id="img_Icon" fitHeight="70.0" fitWidth="90.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../icons/image120.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="lbl_Title" fill="WHITE" layoutX="124.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="242.0">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lbl_Content" fill="WHITE" layoutX="20.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="336.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <HBox layoutX="130.0" layoutY="150.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="193.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/calendar18.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lbl_CreationDate" layoutX="207.0" layoutY="-70.0" text="01/01/2010" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="20.0" layoutY="150.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="170.0" layoutY="-77.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/news18.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lbl_NewsID" layoutX="204.0" layoutY="-93.0" text="001" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="290.0" layoutY="150.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="193.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/eye18.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lbl_Views" layoutX="207.0" layoutY="-70.0" text="1002" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</Pane>

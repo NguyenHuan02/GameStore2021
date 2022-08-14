@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pnl_Row" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="380.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Row_ProductController">
+   <children>
+      <Pane fx:id="pnl_MenuShow" layoutX="300.0" prefHeight="100.0" prefWidth="80.0" styleClass="row_product3" stylesheets="@../../css/main.css">
+         <children>
+            <JFXButton fx:id="btn_View" focusTraversable="false" layoutX="20.0" layoutY="32.0" prefHeight="42.0" prefWidth="51.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/eye50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane fx:id="pnl_RowContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="380.0" styleClass="row_product" stylesheets="@../../css/main.css">
+         <children>
+            <Pane fx:id="pnl_MenuHide" layoutX="370.0" prefHeight="100.0" prefWidth="10.0" styleClass="row_product3" />
+            <ImageView fx:id="img_IconApp" fitHeight="80.0" fitWidth="80.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icons/refresh120.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="115.0" layoutY="15.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="115.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/id16.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="115.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/price16.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/sale16.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="139.0" layoutY="12.0" spacing="4.0">
+               <children>
+                  <Label fx:id="lbl_Id" layoutX="139.0" layoutY="14.0" text="ID" textFill="#b9b8b8">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_Price" layoutX="152.0" layoutY="43.0" text="Price" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_Sale" layoutX="154.0" layoutY="72.0" text="Sale" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="198.0" layoutY="15.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="248.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/tag16.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="236.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/date16v2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="227.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icons/size16.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox layoutX="223.0" layoutY="12.0" spacing="4.0">
+               <children>
+                  <Label fx:id="lbl_Name" layoutX="273.0" layoutY="14.0" prefHeight="25.0" prefWidth="136.0" text="Name" textFill="#b9b8b8">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_RealeaseDate" layoutX="261.0" layoutY="51.0" text="Release Date" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbl_Size" layoutX="252.0" layoutY="72.0" text="Size" textFill="#b9b8b8">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</Pane>
